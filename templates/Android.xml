@@ -1,7 +1,6 @@
 <templateSet group="Android">
-  <template name="id" value="Log.d(&quot;$M_className$&quot;, &quot;$AND$&quot;)" description="Log.d(TAG, message)" toReformat="false" toShortenFQNames="true">
-    <variable name="M_className" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="AND" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="id" value="Log.d(&quot;$M_className$&quot;, &quot;$END$&quot;)" description="Log.d(TAG, message)" toReformat="false" toShortenFQNames="true">
+    <variable name="M_className" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="KOTLIN_CLASS" value="true" />
       <option name="KOTLIN_COMMENT" value="true" />
